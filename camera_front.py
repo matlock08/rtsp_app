@@ -1,12 +1,3 @@
-#    Front
-#  rtsp://eyezon:M@n39ha77an@10.1.1.206:554/videoMain
-#  rtsp://eyezon:M@n39ha77an@10.1.1.206:554/videoSub
-#    Back
-#  rtsp://admin:M@n07ha77an@10.1.1.116:88/videoMain
-#  rtsp://admin:M@n07ha77an@10.1.1.116:88/videoSub
-#    Garage
-#  rtsp://eyezon:M@n07ha77an@10.1.1.3:554/videoMain
-#  rtsp://eyezon:M@n07ha77an@10.1.1.3:554/videoSub
 import os
 import cv2
 import time
@@ -85,7 +76,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
 
-    video_capture = cv2.VideoCapture("rtsp://eyezon:M@n39ha77an@10.1.1.206:554/videoMain")
+    video_capture = cv2.VideoCapture("rtsp://10.1.1.206:554/videoMain")
 
     detection_graph = tf.Graph()
     with detection_graph.as_default():
@@ -123,7 +114,7 @@ if __name__ == '__main__':
                 if video_capture.isOpened() :
                     print("Abierto")
                     video_capture.release()
-                    video_capture = cv2.VideoCapture("rtsp://eyezon:M@n39ha77an@10.1.1.206:554/videoMain")
+                    video_capture = cv2.VideoCapture("rtsp://10.1.1.206:554/videoMain")
                 else :
                     print("Cerrado")
                 
