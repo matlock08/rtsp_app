@@ -1,12 +1,3 @@
-#    Front
-#  rtsp://eyezon:M@n39ha77an@10.1.1.206:554/videoMain
-#  rtsp://eyezon:M@n39ha77an@10.1.1.206:554/videoSub
-#    Back
-#  rtsp://admin:M@n07ha77an@10.1.1.116:88/videoMain
-#  rtsp://admin:M@n07ha77an@10.1.1.116:88/videoSub
-#    Garage
-#  rtsp://eyezon:M@n07ha77an@10.1.1.3:554/videoMain
-#  rtsp://eyezon:M@n07ha77an@10.1.1.3:554/videoSub
 import os
 import cv2
 import time
